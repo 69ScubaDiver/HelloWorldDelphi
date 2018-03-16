@@ -8,7 +8,13 @@ uses
 
 type
   TForm1 = class(TForm)
-    Label1: TLabel;
+    lblTitle: TLabel;
+    lblUserID: TLabel;
+    edtUserID: TEdit;
+    lblPassword: TLabel;
+    edtPassword: TEdit;
+    btnLogon: TButton;
+    procedure btnLogonClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -21,5 +27,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.btnLogonClick(Sender: TObject);
+begin
+  showmessage('Hello World');
+  
+end;
 
 end.

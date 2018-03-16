@@ -30,7 +30,10 @@ implementation
 
 procedure TForm1.btnLogonClick(Sender: TObject);
 begin
-  showmessage('Hello World');
+  //if edtUserID <> ""
+  if edtUserID.Text <> ""
+  showmessage('Hello World: "' + edtUserID.Text +
+    '":"' + edtPassword.Text +'"');
   
 end;
 
